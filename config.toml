@@ -191,7 +191,7 @@ miner_key = "ПРИВАТНЫЙ_КЛЮЧ_КОШЕЛЬКА"
 # If this limit is reached, the node will update its `shard_position`
 # and store only half data.
 #
- db_max_num_sectors = 800000000
+ db_max_num_sectors = 900000000
 
 # The format is <shard_id>/<shard_number>, where the shard number is 2^n.
 # This only applies if there is no stored shard config in db.
@@ -199,16 +199,16 @@ miner_key = "ПРИВАТНЫЙ_КЛЮЧ_КОШЕЛЬКА"
 
 # The time interval to check if we should half `shard_position` to prune data.
 #
- prune_check_time_s = 600
+# prune_check_time_s = 600
 
 # The number of chunk entries to delete in a batch when we prune data.
 #
- prune_batch_size = 1024
+# prune_batch_size = 1024
 
 # The time interval to wait between each prune batch deletion to avoid
 # IO resource exhaustion.
 #
- prune_batch_wait_time_ms = 10000
+# prune_batch_wait_time_ms = 10000
 
 #######################################################################
 ###                Network Peer DB Config Options                   ###
